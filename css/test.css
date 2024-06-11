@@ -53,6 +53,18 @@ a{
     font-family: 'poppins';
 }
 
+.formWarp .formGroup.sucess input{
+    border-color: green;
+}
+
+.formWarp .formGroup.error input{
+    border-color: red;
+}
+
+.formGroup .error{
+    color: red;
+}
+
 .formWarp button{
     display: block;
     width: 100%;

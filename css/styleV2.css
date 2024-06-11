@@ -3,7 +3,7 @@
 
 .VermelhoCarmesim {color:#BB5049,#A22238}
 .AzulCobalto {color: #79A8D5,#4F52A4}
-.Verde {color: #7CBC60,}
+.Verde {color: #7CBC60, #3A7520}
 .Amarelo{color:#FCB94D,#BE5A30}
 .Marrom {color:#D9CAB3,#6D4837}
 .CinzaEscuro {color: #2F2F2F}
@@ -22,6 +22,11 @@
 
 body{
     background-color: #2F2F2F;
+}
+
+h1{
+    font-family:'goblin one';
+    text-align: center;
 }
 
 header {
@@ -73,12 +78,22 @@ nav{
     justify-content: space-around;
     gap: 10px;
     background-color: #D9CAB3;
-    font-family: 'Times New Roman', Times, serif;
     width: 100%; 
 }
 
 nav > a {
-    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:#7CBC60;
+    background-color: #3A7520;
+    border-radius: 10px;
+}
+
+nav a:hover{
+    color:#FFFFFF;
+    background-color: #7CBC60;
 }
 
 .divBorda{

@@ -17,6 +17,7 @@
 }
 
 body{
+   
     background-color: #2F2F2F;
     margin: 0%;
 }
@@ -25,6 +26,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("/img/bckhead.png");
     background-color: #6D4837;
     text-align: Center;
     padding: 0px;
@@ -36,6 +38,12 @@ header > div > h1 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4em;
     color: #FFFFFF;
+
+    background: linear-gradient(to bottom, #FFFFFF,#FFFFFF, #C1A3C9,#89799C);
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
     margin: 0px;
@@ -101,6 +109,7 @@ main{
 div.trailer{
     display: flex;
     justify-content: space-around;
+    margin: 10px auto;
 }
 
 div.trailerBox{
