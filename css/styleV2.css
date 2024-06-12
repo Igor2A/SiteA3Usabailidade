@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
 
-.VermelhoCarmesim {color:#BB5049,#A22238}
+.VermelhoCarmesim {color:#BB5049,#A22238,#5A1565}
 .AzulCobalto {color: #79A8D5,#4F52A4}
 .Verde {color: #7CBC60, #3A7520}
 .Amarelo{color:#FCB94D,#BE5A30}
@@ -17,10 +17,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp (0.9rem, 1vw, 1.5rem);
 }
 
 body{
+    width: auto;
     background-color: #2F2F2F;
 }
 
@@ -42,7 +42,8 @@ header {
 
 header > div > h1 {
     font-family:'goblin one';
-    font-size: 2.5em;
+    /*font-size: 2.5em;*/
+    font-size:clamp(2.5em, 3vw, 4em);;
     color: #FFFFFF;
     background: linear-gradient(to bottom, #FFFFFF,#FFFFFF, #C1A3C9,#89799C);
     -webkit-text-fill-color: transparent;
@@ -75,10 +76,14 @@ header > div > h2 > span.textCob{
 nav{
     overflow: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px;
     background-color: #D9CAB3;
     width: 100%; 
+    border: #7CBC60 solid 5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
 }
 
 nav > a {
@@ -107,13 +112,32 @@ main{
 }
 
 main > h1{
-    font-size: 4em;
+    font-size:clamp(30px, 3vw, 2.5em);
     font-family: 'Goblin One';
     background: linear-gradient(to bottom, #FCB94D, orange, #BE5A30);
     background-clip: border-box;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.h1red{
+    font-size:clamp(30px, 3vw, 2.5em);
+    font-family: 'Goblin One';
+    background: linear-gradient(to bottom, #BB5049,#A22238,#5A1565);
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+main  h2,div.greenBox h1{
+    font-family: 'Goblin One';
+    background: linear-gradient(to bottom, #FFFFFF,#FFFFFF, #C1A3C9,#89799C);
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 } 
 
@@ -121,4 +145,72 @@ main > div > .dialogBox{
     background-color: #D3D3D3;
     border: 5px solid #6D4837;
     border-radius: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    overflow-wrap: break-word;
+}
+
+.areaImg{
+    max-width: 100%;
+    height: auto;
+}
+
+.areaTexto h1{
+    font-family: 'Goblin One';
+    background: linear-gradient(to bottom, #FFFFFF,#FFFFFF, #C1A3C9,#89799C);
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+div.trailerBox{
+    max-width: 650px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #D9CAB3;
+    border-radius: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #7CBC60;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+div.greenBox{
+    max-width: 750px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #D9CAB3;
+    border-radius: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #7CBC60;
+    padding: 30px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+div.greenBox h2,div.greenBox h1{
+    margin: 10px;
+}
+
+.divCount > p{
+    font-size: larger;
+    padding: 10px;
+}
+
+.marginDiv{
+    margin: 0px 50px ;
 }
