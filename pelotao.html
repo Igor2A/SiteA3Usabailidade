@@ -7,6 +7,7 @@
     <title>Zonna: Esquadrão Carmesim x Força Cobalto</title>
     <link rel="stylesheet" href="css/styleV2.css">
     <link rel="stylesheet" href="bg.css">
+    <script src="js/pilotos.js"></script>
 </head>
 <body>
     <header>
@@ -34,18 +35,18 @@
         <h1>PELOTÂO</h1>
 
         <div class="container">
-            <div class="infoBox">
+            <div class="infoBox" id="infocor">
                 <div class="ImgArea">
-                    <img src="img/numzei.gif" alt="ue" class="areaImg">
+                    <img src="img/numzei.gif" alt="ue" class="areaImg" id="fotinha">
                 </div>
-                <h1>NOME</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus quo, quos id itaque obcaecati dolores quidem cupiditate quas rem. Soluta officiis laboriosam repellendus harum eum fugit. Blanditiis, numquam laudantium?</p>
+                <h1 id="nome"></h1>
+                <p id="info">Selecione um item abaixo.</p>
             </div>
         </div>
 
         <div class="container">
             <div class="dialogBox">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla natus, reprehenderit et officia quasi minima maxime, consequuntur eum ea harum necessitatibus, laudantium animi quidem molestias? Odit dolorem obcaecati architecto laborum?</p>
+                <p id="falaJulia">Olha só quem chegou, ainda faltando 8 horas pro meu serviço acabar...</p>
             </div>
             <div class="ImgArea">
                 <img src="img/adm.png" alt="adm" class="areaImg">
@@ -53,45 +54,45 @@
         </div>
 
         <div class="filaDeItenns">
-            <div class="card azu">
-                <img src="img/numzei.gif" alt="ue" class="areaImg">
+            <div class="card azu" onclick="trocaLaEmCima(0)">
+                <img src="img/007.png" alt="fotinha" class="areaImg">
                 <p>General da Força Cobalto</p>
             </div>
-            <div class="card azu">
-                <img src="img/numzei.gif" alt="ue" class="areaImg">
+            <div class="card azu" onclick="trocaLaEmCima(1)">
+                <img src="img/001.png" alt="fotinha" class="areaImg">
                 <p>Marinha da Força Cobalto</p>
             </div>
-            <div class="card azu">
-                <img src="img/numzei.gif" alt="ue" class="areaImg">
+            <div class="card azu" onclick="trocaLaEmCima(2)">
+                <img src="img/002.png" alt="fotinha" class="areaImg">
                 <p>Exército da Força Cobalto</p>
             </div>
-            <div class="card azu">
-                <img src="img/numzei.gif" alt="ue" class="areaImg">
+            <div class="card azu" onclick="trocaLaEmCima(3)">
+                <img src="img/000.png" alt="fotinha" class="areaImg">
                 <p>Aeronáutica da Força Cobalto</p>
             </div>
         </div>
         <div class="filaDeItenns">
-            <div class="card ver">
-                <img src="img/numzei.gif" alt="ue" class="areaImg">
+            <div class="card ver" onclick="trocaLaEmCima(4)">
+                <img src="img/006.png" alt="fotinha" class="areaImg">
                 <p>General do Esquadrão Carmesim</p>
             </div>
-            <div class="card ver">
-                <img src="img/numzei.gif" alt="ue" class="areaImg">
+            <div class="card ver" onclick="trocaLaEmCima(5)">
+                <img src="img/004.png" alt="fotinha" class="areaImg">
                 <p>Marinha do Esquadrão Carmesim</p>
             </div>
-            <div class="card ver">
-                <img src="img/numzei.gif" alt="ue" class="areaImg">
+            <div class="card ver" onclick="trocaLaEmCima(6)">
+                <img src="img/003.png" alt="fotinha" class="areaImg">
                 <p>Exército do Esquadrão Carmesim</p>
             </div>
-            <div class="card ver">
-                <img src="img/numzei.gif" alt="ue" class="areaImg">
+            <div class="card ver" onclick="trocaLaEmCima(7)">
+                <img src="img/005.png" alt="fotinha" class="areaImg">
                 <p>Aeronáutica do Esquadrão Carmesim</p>
             </div>
         </div>
 
     </main>
     <footer>
-
+        <a href="#">Topo da Página &#11181;</a>
     </footer>
 </body>
 </html>

@@ -35,20 +35,20 @@
         <h1>ARSENAL</h1>
 
         <div class="container">
-            <div class="infoBox">
+            <div class="infoBox" id="infocor">
                 <div class="ImgArea">
-                    <img src="img/numzei.gif" alt="ue" class="areaImg">
+                    <img src="img/numzei.gif" alt="ue" class="areaImg" id="fotinha">
                 </div>
     
-                <h1>NOME</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error fugiat eaque possimus. Libero eveniet fugiat quaerat, dolore dolores ipsam atque mollitia dignissimos incidunt amet ullam consectetur reprehenderit dicta ipsum. Unde.</p> 
+                <h1 id="nome"></h1>
+                <p id="info">Selecione um item abaixo.</p> 
             
             </div>
         </div>
         
         <div class="container">
             <div class="dialogBox">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus necessitatibus accusamus, delectus quasi cum doloremque. Adipisci ea vero similique reiciendis voluptates molestias consequuntur labore nesciunt, quae, impedit fugit perferendis quam?</p>
+                <p id="falaJulia">Olha só quem chegou, ainda faltando 8 horas pro meu serviço acabar... </p>
             </div>
             <div class="ImgArea">
                 <img src="img/adm.png" alt="adm" class="areaImg">
@@ -62,11 +62,11 @@
             <div class="filaDeItenns" id="gavetaDeArmas" style="display: none;">
                 <div class="card">
                     <img src="img/numzei.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p title="então parece que não deu né...">teste</p>
                 </div>
                 <div class="card">
                     <img src="img/numzei.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p title="D:">teste</p>
                 </div>
                 <div class="card">
                     <img src="img/numzei.gif" alt="ue" class="areaImg">
@@ -92,53 +92,53 @@
                 <span class="setaItens">&#11167;</span>  Itens  <span class="setaItens">&#11167;</span>
             </button>
             <div class="filaDeItenns" id="gavetaDeItens" style="display: none;" >
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(0)">
                     <img src="img/adr.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>soro</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(1)">
                     <img src="img/armor1.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>colete</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(2)">
                     <img src="img/armor2.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>armadura</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(3)">
                     <img src="img/bullet1.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>balas</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(4)">
                     <img src="img/bullet2.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>pente de balas</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(5)">
                     <img src="img/bullet34.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>bolsa de balas</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(6)">
                     <img src="img/capa.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>capacete</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(7)">
                     <img src="img/pernil.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>pernil</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(8)">
                     <img src="img/pimentao.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>pimentão</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(9)">
                     <img src="img/racao.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>ração militar</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(10)">
                     <img src="img/remedy.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>pílula</p>
                 </div>
-                <div class="card">
+                <div class="card" onclick="copiaDoTrocaLaEmCima(11)">
                     <img src="img/superbullets.gif" alt="ue" class="areaImg">
-                    <p>teste</p>
+                    <p>SUPER balas</p>
                 </div>
             </div>
         </div>
@@ -146,7 +146,7 @@
     </main>
 
     <footer>
-
+        <a href="#">Topo da Página &#11181;</a>
     </footer>
     
 </body>
