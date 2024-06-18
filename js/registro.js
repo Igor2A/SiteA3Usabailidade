@@ -1,8 +1,8 @@
 function naumTem(){
-    alert("Loremzio ipsumlon dolorido cita amen aleluliah, adipisicing elit. Eaque sed enim ipsam voluptatem provident in, deserunt dolores! Reprehenderit quos enim, adipisci commodi iste optio maxime doloremque, dignissimos in assumenda et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptate dolore aut quasi illo debitis quo ducimus incidunt, cumque est nulla expedita odio ad quis beatae velit sequi animi vero!... ireneu, você não sabe nem eu... ");
+    alert("...eerr, você clicou nisso? as pessoas clicam nisso? nossa... sabe, nunca pensei que isso pudesse acontecer, tanto que nem em nada para por aqui 😐");
 }
 
-function deuRuin(){
+function numFoi(){
     let numbero = Math.floor(Math.random() * 5);
 
     switch (numbero) {

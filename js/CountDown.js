@@ -22,9 +22,4 @@ var x = setInterval(function() {
   document.getElementById("countdownMinutos").innerHTML = minutes;
   document.getElementById("countdownSegundos").innerHTML = seconds;
     
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
 }, 1000);
